@@ -29,3 +29,5 @@ Vea [deployment](https://facebook.github.io/create-react-app/docs/deployment) pa
 Vea [Bootstrap](https://react-bootstrap.netlify.app/docs/getting-started/introduction/) para más información.
 
 Agregar siguiente linea `import 'bootstrap/dist/css/bootstrap.min.css';` en el archivo `index.js` debajo de todos los imports.
+
+#### `npm install react-bootstrap-icons` 
