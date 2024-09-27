@@ -1,18 +1,11 @@
-import data from '../../archivos/DATA.json';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Button from 'react-bootstrap/Button';
+import traerDatos from './obtenerActividades';
+import ItemList from '../itemList/itemList';
 
 import { useState, useEffect } from 'react';
 
 const ItemListContainer = () =>{
 
     const [actividades, setActividades]=useState([]);
-
-    const traerDatos = () =>{
-        return new Promise((resolve, reject) =>{
-            resolve(data)
-        })
-    }
 
     useEffect(()=>{
         traerDatos()
@@ -23,18 +16,8 @@ const ItemListContainer = () =>{
     
     return (
         <div className='mt-4'>
-            <ListGroup>
-            {
-                actividades.length > 0 &&
-                actividades.map((actividad)=>{
-                    return(
-                        <div>
-                            <ListGroup.Item>{actividad.actividad}</ListGroup.Item>
-                        </div>
-                    )
-                })
-            }
-            </ListGroup>
+            <h2 className='text-primary text-center'>Actividades por Realizar</h2>
+            <ItemList actividades={actividades}/>
         </div>
     );
 }
