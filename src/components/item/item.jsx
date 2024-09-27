@@ -25,7 +25,7 @@ const Item = ({actividad}) => {
             <div className="row">
                 <ListGroup.Item  className="col-12 col-md-6 mx-auto">{actividad.actividad} 
                     <Button className="btn btn-primary float-end" onClick={handleOpenModal}>
-                        Ver Actividad
+                        Ver
                     </Button>
                 </ListGroup.Item>
             </div>
