@@ -1,4 +1,4 @@
-import traerDatos from './obtenerActividades';
+import {traerDatos} from './obtenerActividades';
 import ItemList from '../itemList/itemList';
 
 import { useState, useEffect } from 'react';
